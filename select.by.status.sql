@@ -1,5 +1,5 @@
 -- pull issues by status
-SELECT issues.title, statuses.content, issues.created_at
+SELECT statuses.content, issues.title, issues.created_at
 FROM issues
 INNER JOIN
 statuses
