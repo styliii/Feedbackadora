@@ -32,7 +32,7 @@ VALUES
 -- submit solution
 INSERT INTO solutions (issue_id, submitted_by, content)
 VALUES
-(1, 5, "figure it out yourself, dummy.");
+(1, 5, "figure it out yourself, dummy."),
 (2, 3, "buy earphones"),
 (3, 1, "git rollback"),
 (2, 5, "call your landlord"),
