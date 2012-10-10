@@ -7,9 +7,10 @@ CREATE TABLE users (
 CREATE TABLE issues (
   id INTEGER PRIMARY KEY,
   creator_id INTEGER,
+  title TEXT,
   content TEXT,
-  status_id INTEGER DEFAULT 1,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  status_id INTEGER DEFAULT 1 NOT NULL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE statuses (
@@ -20,7 +21,8 @@ CREATE TABLE statuses (
 CREATE TABLE solutions (
   id INTEGER PRIMARY KEY,
   issue_id INTEGER,
+  content TEXT,
   submitted_by INTEGER,
-  accepted BOOLEAN DEFAULT 0,
-  submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  accepted BOOLEAN DEFAULT 0 NOT NULL,
+  submitted_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
