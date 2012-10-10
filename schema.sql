@@ -1,6 +1,6 @@
 CREATE TABLE users (
   id INTEGER PRIMARY KEY,
-  instructor BOOLEAN,
+  instructor BOOLEAN DEFAULT 0,
   name TEXT
 );
 
